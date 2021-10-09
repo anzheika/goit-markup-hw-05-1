@@ -877,6 +877,10 @@ button {
   fill: black;
 }
 
+.close-btn:hover .modal-btn-icon {
+  fill: var(--accent-color);
+}
+
 .close-btn {
   position: absolute;
   right: 10px;
