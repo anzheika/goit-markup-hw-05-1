@@ -842,6 +842,7 @@ button {
 /* =======КОНЕЦ ФУТЕРА======== */
 
 /* ========БЕКДРОП НАЧАЛО======== */
+
 .backdrop {
   position: fixed;
   width: 100vw;
@@ -851,6 +852,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity 300ms ease-in-out;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal {
@@ -860,11 +868,27 @@ button {
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 .modal-btn-icon {
   width: 11px;
   height: 11px;
-  background-color: white;
   fill: black;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: transparent;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* =========БЕКДРОП КОНЕЦ========= */
